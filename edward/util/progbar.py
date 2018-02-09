@@ -86,7 +86,7 @@ class Progbar(object):
         bar += ('*' * prog_width)
 
     bar += (' ' * (self.width - prog_width))
-    sys.stdout.write(bar)
+    sys.stdout.write(bar.encode("utf-8"))
 
     # Write values to stdout.
     if current:
